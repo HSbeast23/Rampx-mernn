@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register — Registration Portal</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">← Back</a>
+    <h2>Register</h2>
+  </header>
+
+  <main class="page page-centered">
+    <form id="registerForm" class="card form-card" novalidate>
+      <h3>Create an account</h3>
+      <label>Full name<input name="name" type="text" required placeholder="Your full name"></label>
+      <label>Email<input name="email" type="email" required placeholder="you@example.com"></label>
+      <label>Password<input name="password" type="password" required minlength="6" placeholder="Min 6 characters"></label>
+      <label class="full">Role
+        <select name="role">
+          <option>Attendee</option>
+          <option>Volunteer</option>
+          <option>Organizer</option>
+        </select>
+      </label>
+      <div class="form-actions">
+        <button class="btn primary" type="submit">Register</button>
+        <button class="btn" type="button" id="resetBtn">Reset</button>
+      </div>
+      <p id="formMessage" class="muted"></p>
+    </form>
+  </main>
+</body>
+</html>
